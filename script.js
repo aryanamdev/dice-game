@@ -1,6 +1,13 @@
 let dice = document.querySelectorAll(".dice img");
 let button = document.querySelector("button");
 let heading = document.querySelector(".container h1");
+let container = document.getElementsByClassName("container");
+
+button.addEventListener("load", changeTextOnload());
+
+function changeTextOnload() {
+  button.innerText = "Match";
+}
 
 dice.forEach((e) => {
   button.addEventListener("click", (event) => {
@@ -22,5 +29,7 @@ dice.forEach((e) => {
     } else if (randomNumber01 < randomNumber02) {
       heading.textContent = "Player 2 Won!";
     }
+
+    button.innerHTML = "Rematch";
   });
 });

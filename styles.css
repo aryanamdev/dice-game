@@ -2,6 +2,7 @@
   width: 70%;
   margin: auto;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .dice {
@@ -19,12 +20,14 @@ h1 {
   text-shadow: 5px 0 #232931;
   font-size: 5rem;
   color: #4ecca3;
+  background-image: linear-gradient(to-bottom, #000000, #ffffff);
 }
 
 p {
   font-size: 2rem;
   color: #4ecca3;
   font-family: "Indie Flower", cursive;
+  margin-inline: 2em;
 }
 
 img {
@@ -44,6 +47,7 @@ button {
   font-size: 1rem;
   border-radius: 10px;
   margin-top: 2rem;
+  cursor: pointer;
   padding: 0.3em 1em;
 }
 
